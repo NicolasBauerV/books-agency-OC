@@ -109,6 +109,7 @@ a {
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .search-container .title h1 {
@@ -205,10 +206,34 @@ a {
     font-weight: bold;
 }
 
+/* Conteneur Information */
+
+.info-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info-container p {
+    margin-left: 10px;
+}
+
+.fa-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -221,11 +246,66 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.hebergements-row-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.hebergements-cards a .hebergement-img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    max-height: 124px;
+}
+
+.hebergements-cards a .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline: 15px;
+}
+
+.hebergements-cards a .card {
+    padding-bottom: 12px;
+    width: 250px;
+}
+
+.hebergements-cards a .card-content .card-txt {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    gap: 8px;
+}
+
+.hebergements-cards a .card-content .card-txt .card-subtitle {
+    font-size: 14px;
+}
+
+.btn-see-more {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;    
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .populaires-title {
@@ -234,9 +314,15 @@ a {
     align-items: center;
 }
 
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 33px;
+}
+
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
